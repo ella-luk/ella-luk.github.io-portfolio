@@ -1,1 +1,120 @@
+<html>
+<head>
+    <title>NonLiving Sandbox</title>
+    <style>
+        h1 {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        }
+        body {
+  margin: 0;
+  padding-top: 60px; /* important: prevents content from hiding under the fixed header */
+  font-family: sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
 
+nav a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+footer {
+  padding: 50px;
+  text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30;
+    margin-right: 30;
+    margin-top: -25;
+    margin-bottom: 50;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20;
+}
+
+.grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      flex-wrap: wrap;
+      margin: 0 auto;  
+    }
+
+.grid-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.grid-image2 {
+  width: 30%;
+  max-width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.grid-image3 {
+  width: 30%;
+  max-width: 100%;
+  aspect-ratio: 1.7 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="works.html">WORKS</a>
+  </nav>
+</header>
+<h1>NonLiving Sandbox</h1>
+<p>The NonLiving Sandbox is an interactive installation that invites participants to engage with natural elements through tactile play and responsive digital media. The piece features rocks, sticks, and branches collected from Isla Vista beaches within a hand-built sandbox, arranged to emulate both the randomness and intention found in nature. Projected onto the contents of the box is a fluid ripple animation that responds dynamically to the motion of participants' hands. 
+
+The natural elements of the Sandbox are nonliving or dead, and outside of their context of the beach, they are further removed from life. As viewers interact with the piece, it becomes meditative and soothing to move the elements around and play with the sand. Conceptually, the viewer becomes the living element of the installation. Centering the viewer rather than nature itself, the piece is a consideration of the limitations of interacting with nature through technology.
+</p>
+
+<div class="grid">
+<img src="IMG_5910.jpeg" alt="Description of image" class="grid-image"> 
+<video src="IMG_3185.mov" autoplay muted loop class="grid-image"></video> 
+<video src="IMG_3204.mov" autoplay muted loop class="grid-image"></video>
+<video src="IMG_3183.mov" autoplay muted loop class="grid-image"></video>
+<video src="IMG_3205.mov" autoplay muted loop class="grid-image2"></video>
+<img src="IMG_5902 copy.jpeg" class="grid-image3">
+
+</div>
+
+</body>
+<footer>
+    <h5> © 2025 Ella Luk </h5>
+</footer>
+</html>
