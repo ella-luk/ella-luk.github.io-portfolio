@@ -8,20 +8,104 @@
         padding: 10px;
         border-radius: 10px;
         }
+        body {
+  margin: 0;
+  padding-top: 60px; /* important: prevents content from hiding under the fixed header */
+  font-family: sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  border-radius: 10%;
+}
+
+
     </style>
 </head>
 <body>
-    <video autoplay muted loop playsinline>
-      <source src="nonlivingsandbox.mp4" type="video/mp4">
-    </video>
-    <h1>NonLiving Sandbox</h1>
-    <p>The NonLiving Sandbox is an interactive installation that invites participants to engage with natural elements through tactile play and responsive digital media. The piece features rocks, sticks, and branches collected from Isla Vista beaches within a hand-built sandbox, arranged to emulate both the randomness and intention found in nature. Projected onto the contents of the box is a fluid ripple animation that responds dynamically to the motion of participants' hands. The natural elements of the Sandbox are nonliving or dead, and outside of their context of the beach, they are further removed from life. As viewers interact with the piece, it becomes meditative and soothing to move the elements around and play with the sand. Conceptually, the viewer becomes the living element of the installation. Centering the viewer rather than nature itself, the piece is a consideration of the limitations of interacting with nature through technology.</p>
-    <a href="https://meiji3114.wixsite.com/ella-luk-2/nonliving-sandbox-1" target="_blank" rel="noopener noreferrer">NonLiving Sandbox Project Breakdown</a>
-    <hr>
-    <img src="leaflight.jpg" alt="pottery photo" style="width: 100%">
-    <h1>LeafLight</h1>
-    <p>LeafLight is a set of ceramic pieces inspired by the forms, patterns and colors found within nature. It features various different vessels including vases, cups and mugs. Each piece draws its particular form from a certain element in nature. Three tiered bulbous vases derive their form from a stack of rocks along the shore; the organically shaped cup molded to fit a hand takes inspiration from water's ability to fit any container; the uneven edges of a sand color mug imitate the dips and grooves of sand at the beach. The glaze patterns on each piece are carefully selected to emulate certain items from the natural world including the reflection of water ripples and the texture of beached seaweed. Each piece is nothing more than a typical vessel, but the form it takes up and the precise ornamentation of each piece is what makes it special. Using clay from the earth, this ceramic project pays homage to its roots of nature and serves as a reflection of the earth from which its materials were sourced. </p>
-    <a href="https://meiji3114.wixsite.com/ella-luk-2/nature-inspired-pottery" target="_blank" rel="noopener noreferrer">LeafLight Project Breakdown</a>
+  <header>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</header>
+
+    <div class="projects-grid">
+  <div class="project">
+    <img src="cat.jpg" alt="Project 1">
+    <div class="overlay">
+      <span>NonLiving Sandbox</span>
+    </div>
+  </div>
+  <div class="project">
+    <img src="me.jpg" alt="Project 2">
+    <div class="overlay">
+      <span>LeafLight</span>
+    </div>
+  </div>
+</div>
 </body>
 <footer>
     <p> © 2025 Ella Luk </p>
