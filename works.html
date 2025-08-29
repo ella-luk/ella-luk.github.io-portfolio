@@ -8,6 +8,20 @@
         padding: 10px;
         border-radius: 10px;
         }
+        label {
+          font-style: normal;
+          font-size: 25;
+        }
+        h2 {
+          padding-top: 70;
+          font-size: 40;
+          text-align: center;
+        }
+        label1 {
+          padding-right: 20px;
+          font-size: 25px;
+          font-weight: bold;
+        }
         body {
   margin: 0;
   padding-top: 60px; /* important: prevents content from hiding under the fixed header */
@@ -34,11 +48,18 @@ nav a {
   font-weight: bold;
 }
 
+nav a.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: none; /* Don't force uppercase */
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  padding: 70px 70px;
+  padding: 100px 100px;
+  padding-top: 30px;
 }
 
 .project {
@@ -91,11 +112,14 @@ footer {
 <body>
   <header>
   <nav>
-    <a href="index.html">HOME</a>
+    <a href="index.html" class="brand">ella luk</a>
     <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
   </nav>
 </header>
-
+<h2>a selection of recent works</h2>
+<hr style="width: 50%;">
 <div class="projects-grid">
   <div class="project">
     <a href="nonliving-sandbox.html">
@@ -110,6 +134,50 @@ footer {
       <img src="leaf.jpeg" alt="Project 2">
       <div class="overlay">
         <span>LeafLight</span>
+      </div>
+    </a>
+  </div>
+<div class="project">
+    <a href="pocketpantry.html">
+      <img src="cat.jpg">
+      <div class="overlay">
+        <span>Pocket Pantry
+        <hr>
+        <label>ui/ux grocery app ideation</label>
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="project">
+    <a href="word magazine.html">
+      <img src="me.jpg">
+      <div class="overlay">
+        <span>WORD Magazine
+        <hr>
+        <label>graphic design for magazine editorials</label>
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="project">
+    <a href="filmvideos.html">
+      <img src="cat.jpg">
+      <div class="overlay">
+        <span>Film Videos
+        <hr>
+        <label>film photography and video editing</label>
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="project">
+    <a href="pcn.html">
+      <img src="me.jpg">
+      <div class="overlay">
+        <span>UCSB's PCN
+        <hr>
+        <label>graphic design</label>
+        </span>
       </div>
     </a>
   </div>
