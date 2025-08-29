@@ -34,6 +34,11 @@ nav a {
   font-weight: bold;
 }
 
+nav a.brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: none; /* Don't force uppercase */
+}
 
 footer {
   padding: 50px;
@@ -93,8 +98,10 @@ p {
 <body>
   <header>
   <nav>
-    <a href="index.html">HOME</a>
-    <a href="works.html">WORKS</a>
+    <a href="index.html" class="brand">ella luk</a>
+      <a href="works.html">WORKS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
   </nav>
 </header>
 <h1>NonLiving Sandbox</h1>
